@@ -4,8 +4,10 @@ import { Button } from "./ui/button";
 import { PenBoxIcon } from "lucide-react";
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import UseMenu from "./use-menu";
+import { checkUser } from "@/lib/checkUser";
 
-const Header = () => {
+const Header = async() => {
+      await checkUser();
     return (
         <div className="mx-auto py-2 px-2 flex justify-between items-center shadow-md border-2">
             <Link href="/">
