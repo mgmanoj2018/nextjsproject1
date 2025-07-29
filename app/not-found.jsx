@@ -1,16 +1,5 @@
-
-// app/not-found.tsx or app/404.tsx
-"use client";
-
-import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-
-function SearchHandler() {
-  const params = useSearchParams();
-  const query = params.get("q");
-
-  return <p>Search: {query}</p>;
-}
+import SearchHandler from "./components/SearchHandler"; // adjust path if needed
 
 export default function NotFound() {
   return (
