@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function UserProfilePage({ params }) {
-  const username = params.username;
+  const {username} = params;
 
   const user = await getUserByUsername(username);
 
