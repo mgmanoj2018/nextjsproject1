@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import SearchHandler from "./components/SearchHandler"; // adjust path if needed
+import SearchHandler from "./SearchHandler";
+// import SearchHandler from "./components/SearchHandler"; // adjust path if needed
 
 export default function NotFound() {
   return (
