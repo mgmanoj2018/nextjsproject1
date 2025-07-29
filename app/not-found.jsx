@@ -23,7 +23,7 @@ function NotFoundContent() {
 
 export default function NotFound() {
   return (
-    <Suspense fallback={<div>Loading...</div>}> {/* Wrap in Suspense */}
+    <Suspense fallback={<div>Loading...</div>}>
       <NotFoundContent />
     </Suspense>
   );
