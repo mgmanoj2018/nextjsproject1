@@ -18,7 +18,7 @@ const AppLayout = ({ children }) => {
   ];
   return <div>
     {!isLoaded && <BarLoader width={"100%"} color="#333" />}
-    <div className="flex flex-col h-screen bg-blue-100 md:flex-row">
+    <div className="flex flex-col h-screen bg-blue-40 md:flex-row">
       <aside className="hidden md:block w-64 bg-white">
         <nav className="mt-8">
           <ul>
